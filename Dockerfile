@@ -1,3 +1,3 @@
 FROM minio/minio
 
-CMD sh -c 'minio server /data --address ":$PORT"'
+CMD ["server", "/data", "--address", ":10000"]
