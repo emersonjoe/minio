@@ -1,3 +1,3 @@
 FROM minio/minio
 
-CMD ["server", "/data", "--console-address", ":9001"]
+CMD sh -c 'minio server /data --address ":$PORT"'
